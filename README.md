@@ -1,8 +1,12 @@
 # Git & GitHub Tutorial Website
 
-Welcome! This is a beginner-friendly Git and GitHub tutorial designed to help Travis and Ryan learn the essentials of version control using real workflows.
+Welcome! This is a beginner-friendly Git and GitHub tutorial designed to help my friends learn the essentials of version control using real workflows.
 
 This site is automatically published via [GitHub Pages](https://pages.github.com) whenever a change is merged into the `main` branch.
+
+GitHub Page is hosted at https://themattburns.com
+
+![gitflow](/src/gitflow.png)
 
 ---
 
@@ -38,3 +42,7 @@ This site is automatically published via [GitHub Pages](https://pages.github.com
 └── .github/
     └── workflows/
         └── deploy.yml       # GitHub Actions CI/CD for GitHub Pages
+```
+## 📦 Additional Resources
+
+The `resources` directory has some useful stuff, including a [handy dandy Git reference sheet](/resources/git_command_reference.pdf)
