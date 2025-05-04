@@ -9,7 +9,12 @@
   <h1>Hello Travis!</h1>
   <p>Follow these steps to complete your Git tutorial:</p>
   <ol>
-    <li>Configure Git on your machine:
+    <li>Check if your Git config is already set:
+      <pre><code>git config list | grep "user."</code></pre>
+      <p>If you see output like this, you're all set:</p>
+      <pre><code>user.name=travis
+user.email=travis@example.com</code></pre>
+      <p>If not, set your Git name and email:</p>
       <pre><code>git config --global user.name "Travis"
 git config --global user.email "travis@example.com"</code></pre>
     </li>
