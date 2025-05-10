@@ -2,39 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Git Tutorial for Travis</title>
+  <title>Travis Page</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <h1>Hello Travis!</h1>
-  <p>Follow these steps to complete your Git tutorial:</p>
-  <ol>
-    <li>Check if your Git config is already set:
-      <pre><code>git config list | grep "user."</code></pre>
-      <p>If you see output like this, you're all set:</p>
-      <pre><code>user.name=travis
-user.email=travis@example.com</code></pre>
-      <p>If not, set your Git name and email:</p>
-      <pre><code>git config --global user.name "Travis"
-git config --global user.email "travis@example.com"</code></pre>
-    </li>
-    <li>Clone the repository:
-      <pre><code>git clone https://github.com/your-username/git-tutorial-site.git
-cd git-tutorial-site</code></pre>
-    </li>
-    <li>Create a new branch:
-      <pre><code>git checkout -b travis-feature</code></pre>
-    </li>
-    <li>Open <code>examples/travis.html</code>, copy all contents.</li>
-    <li>Paste it into <code>users/travis.html</code> to replace this tutorial.</li>
-    <li>Stage and commit your changes:
-      <pre><code>git add users/travis.html
-git commit -m "Travis: replaced tutorial with custom page"</code></pre>
-    </li>
-    <li>Push your branch:
-      <pre><code>git push origin travis-feature</code></pre>
-    </li>
-    <li>Go to GitHub and create a Pull Request into <code>main</code>.</li>
-  </ol>
+  <h1>This is Travis's page!</h1>
+  <p>Travis is an awesome coder and since he knows how to work with Git now, he is basically a DevOps engineer.</p>
+  <img src="../src/travis.jpg" alt="Travis' Photo"class="travis">
 </body>
 </html>
