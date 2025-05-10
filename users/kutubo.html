@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Git Tutorial for Kutubo</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <h1>Hello Kutubo!</h1>
+  <p>Follow these steps to complete your Git tutorial:</p>
+  <ol>
+    <li>Check if your Git config is already set:
+      <pre><code>git config list | grep "user."</code></pre>
+      <p>If you see output like this, you're all set:</p>
+      <pre><code>user.name=kutubo
+user.email=kutubo@example.com</code></pre>
+      <p>If not, set your Git name and email:</p>
+      <pre><code>git config --global user.name "Kutubo"
+git config --global user.email "Kutubo@example.com"</code></pre>
+    </li>
+    <li>Clone the repository:
+      <pre><code>git clone https://github.com/your-username/git-tutorial-site.git
+cd git-tutorial-site</code></pre>
+    </li>
+    <li>Create a new branch:
+      <pre><code>git checkout -b kutubo-feature</code></pre>
+    </li>
+    <li>Open <code>examples/kutubo.html</code>, copy all contents.</li>
+    <li>Paste it into <code>users/kutubo.html</code> to replace this tutorial.</li>
+    <li>Stage and commit your changes:
+      <pre><code>git add users/kutubo.html
+git commit -m "Kutubo: replaced tutorial with custom page"</code></pre>
+    </li>
+    <li>Push your branch:
+      <pre><code>git push origin kutubo-feature</code></pre>
+    </li>
+    <li>Go to GitHub and create a Pull Request into <code>main</code>.</li>
+  </ol>
+</body>
+</html>
